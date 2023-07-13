@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - Entry point of the program.
  *
- * Description: A C program that prints with put function
+ * Description: This program prints the sentence
  *
- * retuen: always 0 (success)
+ * Return: Always 0 (Success)
 */
 
 int main(void)
