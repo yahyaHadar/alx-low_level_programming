@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 /**
- *main - entry point
+ * main - entry point
  *
- *Description: A C program that prints with put function
+ * Description: A C program that prints with put function
  *
- *retuen: always 0 (success)
- */
+ * retuen: always 0 (success)
+*/
+
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
