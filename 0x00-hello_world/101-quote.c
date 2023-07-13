@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <unistd.h>
 
 /**
@@ -10,6 +9,8 @@
  */
 int main(void)
 {
-	fput("and that place of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
+	char quo[] = "and that place of art is useful\" - Dora Korpar, 2015-10-19\n";
+
+	write(1, quo, 59);
 	return (1);
 }
