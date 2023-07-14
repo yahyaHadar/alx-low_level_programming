@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  * main - Entry mode
  *
@@ -17,7 +18,7 @@ int main(void)
 	{
 		putchar(n);
 	}
-	for (n = 97; m <= 102; m++)
+	for (m = 97; m <= 102; m++)
 	{
 		putchar(m);
 	}
