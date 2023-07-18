@@ -13,7 +13,7 @@ void times_table(void)
 		_putchar('0'); /* Print the initial 0 */
 		for (mult = 1; mult <= 9; mult++)
 		{
-			_putchar(','); /* Print the comma spectator*/
+			_putchar(','); /* Print the comma spectator */
 			_putchar(' ');
 
 			prod = num * mult;
@@ -23,7 +23,7 @@ void times_table(void)
 			else
 				_pucthar((prod / 10) + '0'); /* Print the tens digit */
 
-			_pucthar((prod % 10) + '0'); /* Print the ones digit */
+			_putchar((prod % 10) + '0'); /* Print the ones digit */
 		}
 		_putchar('\n'); /* Move the next row */
 	}
