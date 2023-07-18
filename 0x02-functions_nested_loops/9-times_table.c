@@ -21,7 +21,7 @@ void times_table(void)
 			if (prod <= 9)
 				_putchar(' '); /* Add space for single degit */
 			else
-				_pucthar((prod / 10) + '0'); /* Print the tens digit */
+				_putchar((prod / 10) + '0'); /* Print the tens digit */
 
 			_putchar((prod % 10) + '0'); /* Print the ones digit */
 		}
