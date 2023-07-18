@@ -40,11 +40,11 @@ int main(void)
 
 	for (count = 1; count <= 98; count++)
 	{
-		if (flo > 0)
-			printf("%lu", flo);
+		if (f1o > 0)
+			printf("%lu", f1o);
 		initial0s = numLength(mx) - 1 - numLength(f1);
 
-		while (flo > 0 && initial0s > 0)
+		while (f1o > 0 && initial0s > 0)
 		{
 			printf("%d", 0);
 			initial0s--;
@@ -53,7 +53,7 @@ int main(void)
 		printf("%lu", f1);
 
 		sum = (f1 + f2) % mx;
-		sumo = flo + f2o + (f1 + f2) / mx;
+		sumo = f1o + f2o + (f1 + f2) / mx;
 		f1 = f2;
 		f1o = f2o;
 		f2 = sum;
@@ -62,7 +62,7 @@ int main(void)
 		if (count != 98)
 			printf(", ");
 		else
-			print("\n");
+			printf("\n");
 	}
 	return (0);
 }
