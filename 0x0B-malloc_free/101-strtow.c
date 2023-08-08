@@ -11,14 +11,14 @@
 
 int count_word(char *s)
 {
-	int flag, e, w;
+	int flag, c, w;
 
 	flag = 0;
 	w = 0;
 
-	for (e = 0; s[e] != '\0'; e++)
+	for (c = 0; s[c] != '\0'; c++)
 	{
-		if (s[e] == ' ')
+		if (s[c] == ' ')
 			flag = 0;
 		else if (flag == 0)
 		{
@@ -39,15 +39,15 @@ int count_word(char *s)
 char **strtow(char *str)
 {
 	char **matrix, *tmp;
-	int i, k = 0, len = 0, wrds, e = 0, start, end;
+	int i, k = 0, len = 0, words, c = 0, start, end;
 
 	while (*(str + len))
 		len++;
-	wrds = count_word(str);
-	if (wrds == 0)
+	words = count_word(str);
+	if (words == 0)
 		return (NULL);
 
-	matrix = (char **) malloc(sizeof(char *) * (wrds + 1));
+	matrix = (char **) malloc(sizeof(char *) * (words + 1));
 	if (matrix == NULL)
 		return (NULL);
 
@@ -55,23 +55,24 @@ char **strtow(char *str)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
 		{
-			if (e)
+			if (c)
 			{
 				end = i;
-				tmp = (char *) malloc(sizeof(char) * (e + 1));
+				tmp = (char *) malloc(sizeof(char) * (c + 1));
 				if (tmp == NULL)
 					return (NULL);
 				while (start < end)
 					*tmp++ == str[start++];
 				*tmp = '\0';
-				matrix[k] = tmp - e;
+				matrix[k] = tmp - c;
 				k++;
-				e = 0;
+				c = 0;
 			}
 		}
-		else if (e++ == 0)
+		else if (c++ == 0)
 			start = i;
 	}
 	matrix[k] = NULL;
+
 	return (matrix);
 }
