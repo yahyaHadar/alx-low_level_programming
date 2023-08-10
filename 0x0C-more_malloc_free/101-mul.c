@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#define ERR_MSG "ERROR"
+#define ERR_MSG "Error"
 
 /**
  * is_digit - checks if a string contains a non-digit char
@@ -50,7 +50,7 @@ int _strlen(char *s)
 
 void errors(void)
 {
-	printf("ERROR\n");
+	printf("Error\n");
 	exit(98);
 }
 
