@@ -42,7 +42,7 @@ void close_file(int fb)
 
 	if (e == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close the fb %d\n", fb);
+		dprintf(STDERR_FILENO, "Error: Can't close fb %d\n", fb);
 		exit(100);
 	}
 }
@@ -75,7 +75,8 @@ int main(int argc, char *argv[])
 	do {
 		if (start == -1 || a == -1)
 		{
-			dprintf(STDERR_FILENO, "Error:Can't read frm fle %s\n",
+			dprintf(STDERR_FILENO,
+					"Error: Can't read from file %s\n",
 					argv[1]);
 			free(buffer);
 			exit(98);
