@@ -54,6 +54,11 @@ void close_file(int fb)
  * @argv: an array of pointers to arguments
  *
  * Return: 0 on success
+ *
+ * Description: argument count uncorrect -exit code 97
+ * or file_from does not exist or not able to read - exit code 98
+ * if file_to cannot be created or written - exit code 99
+ * if file_to or file_from cannot be closed - exit code 100
 */
 
 int main(int argc, char *argv[])

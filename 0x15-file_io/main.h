@@ -5,8 +5,6 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
 
 #define READ_BUF_SIZE 1024
 
