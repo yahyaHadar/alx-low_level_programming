@@ -2,9 +2,10 @@
 
 /**
  * add_dnodeint_end - adds a nod at the end
-
+ *
  * @head: the head of the list
  * @n: the data
+ *
  * Return: a pointer
 */
 
