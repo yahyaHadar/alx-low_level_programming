@@ -2,9 +2,9 @@
 
 /**
  * dlistint_len - return lenghth of dlist
- * 
+ *
  * @h: the address of head node
- * 
+ *
  * Return: size of list
 */
 
