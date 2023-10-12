@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * get_dlistint_len - Returns the number of elements in a doubly linked list
- * 
+ * get_dlistint_len - Returns the number of elements in a dlist
+ *
  * @h: Pointer to the head of the list
- * 
+ *
  * Return: The number of elements in the list
 */
 
@@ -24,12 +24,12 @@ size_t get_dlistint_len(const dlistint_t *h)
 
 /**
  * insert_dnodeint_at_index - insert node at given index
- *
+ * 
  * @h: head of the list
  * @idx: the index
  * @n: data
- *
- * Return: the address of the new node
+ * 
+ * Return:  the address of the new node
 */
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
@@ -60,7 +60,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		free(new_node);
 		return (NULL);
 	}
-	-new_node->next = current->next;
+	new_node->next = current->next;
 	new_node->prev = current;
 	if (current->next)
 		current->next->prev = new_node;
