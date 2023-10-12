@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * dlistint_len - return lenghth of dlist
+ * dlistint_len - return lenght of the dlist
  *
- * @h: the address of head node
+ * @h: address of the head node
  *
- * Return: size of list
+ * Return: size of the list
 */
 
 size_t dlistint_len(const dlistint_t *h)
