@@ -6,7 +6,7 @@
  *
  * @h: Pointer to the head of the list
  *
- * Return: The number of elements in the list
+ * Return: The number of elements in list
 */
 
 size_t get_dlistint_len(const dlistint_t *h)
